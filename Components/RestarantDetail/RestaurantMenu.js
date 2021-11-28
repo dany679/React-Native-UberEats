@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 export default function RestaurantMenu() {
   const menuLocal = [
@@ -19,21 +19,47 @@ export default function RestaurantMenu() {
       description:
         'Peito de frango com bolinhas de mandioca e tempero baiano. ',
     },
+    {
+      prate: 'Frango a la turma ',
+      imageUrl:
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.nzpxZ3z0THxWAbaIFVy5DQHaEo%26pid%3DApi&f=1',
+      price: 22.4,
+      description:
+        'Peito de frango com bolinhas de mandioca e tempero baiano. ',
+    },
+    {
+      prate: 'Frango a la turma ',
+      imageUrl:
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.nzpxZ3z0THxWAbaIFVy5DQHaEo%26pid%3DApi&f=1',
+      price: 22.4,
+      description:
+        'Peito de frango com bolinhas de mandioca e tempero baiano. ',
+    },
+    {
+      prate: 'Frango a la turma ',
+      imageUrl:
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.nzpxZ3z0THxWAbaIFVy5DQHaEo%26pid%3DApi&f=1',
+      price: 22.4,
+      description:
+        'Peito de frango com bolinhas de mandioca e tempero baiano. ',
+    },
   ];
 
   return (
-    <ScrollView showVerticalScrollIndicator={false}>
+    <View
+    style={{ paddingBottom:30 , paddingHorizontal:4 }}
+    >
       {menuLocal.map((menu, idx) => (
         <View style={styles.wrapperView} key={idx}>
           <MenuInfo
             title={menu.prate}
             description={menu.description}
-            price={menu.price}
+             price={menu.price}
           />
           <MenuImage imageUrl={menu.imageUrl} />
         </View>
       ))}
-    </ScrollView>
+    </View>
   );
 }
 

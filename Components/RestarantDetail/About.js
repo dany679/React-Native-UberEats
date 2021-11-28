@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { Image } from 'react-native-elements/dist/image/Image';
+import GoBack from '../navigation/GoBack';
 
 const localRestaurantsData = {
   imageUrl:
@@ -15,9 +16,10 @@ const localRestaurantsData = {
   safe: true,
   tags: ['comfort food', 'burger', 'beer', 'Coffee', 'massa'],
 };
-export default function About() {
+export default function About({navigation}) {
   return (
     <>
+      <GoBack navigation={navigation}/>
       <RestaurantImage localRestaurantsData={localRestaurantsData} />
       <RestaurantSafe localRestaurantsData={localRestaurantsData} />
       <RestaurantData localRestaurantsData={localRestaurantsData} />

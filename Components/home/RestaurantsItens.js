@@ -20,6 +20,15 @@ const localRestaurantsData = [
     categories: ['Bear', 'Coffee'],
     estimateTime: '30 · 45 min ',
     name: 'Coffee to go',
+    stars: 4.8,
+  },
+  {
+    imageUrl:
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp1874159.jpg&f=1&nofb=1',
+    price: 40,
+    categories: ['Bear', 'Coffee'],
+    estimateTime: '30 · 45 min ',
+    name: 'Coffee to go',
     stars: 4.7,
   },
 ];

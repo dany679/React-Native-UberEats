@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, Text, SafeAreaView, ScrollView } from 'react-native';
-import HeaderTabs from '../Components/home/HeaderTabs';
-import SearchBar from '../Components/home/SearchBar';
-import Categories from '../Components/home/Categories';
-import RestaurantsItens from '../Components/home/RestaurantsItens';
-import BottomBar from '../Components/home/BottomBar';
+import { SafeAreaView, ScrollView, View } from 'react-native';
 import { Divider } from 'react-native-elements/dist/divider/Divider';
+import BottomBar from '../Components/home/BottomBar';
+import Categories from '../Components/home/Categories';
+import HeaderTabs from '../Components/home/HeaderTabs';
+import RestaurantsItens from '../Components/home/RestaurantsItens';
+import SearchBar from '../Components/home/SearchBar';
 
 export default function Home({ navigation }) {
   return (

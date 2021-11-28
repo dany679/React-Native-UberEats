@@ -19,6 +19,7 @@ export default function BottomBar({ navigation }) {
         navigation={navigation}
         active={active}
         setActive={setActive}
+        screen={'Home'}
       />
       <Icon name={'heart'} active={active} setActive={setActive} />
       <Icon
@@ -32,17 +33,19 @@ export default function BottomBar({ navigation }) {
         title={'account'}
         active={active}
         setActive={setActive}
+        navigation={navigation}
+        screen={'About'}
       />
     </View>
   );
 }
 
-const Icon = ({ name, title, active, setActive, navigation }) => (
+const Icon = ({ name, title, active, setActive, navigation ,screen}) => (
   <TouchableOpacity
     activeOpacity={1}
     onPress={() => {
       setActive(name);
-      navigation?.navigate('RestaurantDetail');
+      navigation?.navigate(screen ?screen:name);
     }}
   >
     <View style={{ alignItems: 'center' }}>
